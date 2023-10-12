@@ -14,5 +14,13 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: 'babel-loader',
+      }
+    ]
 
+  }
 };
