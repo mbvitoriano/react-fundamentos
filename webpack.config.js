@@ -14,6 +14,13 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
   ],
+  performance: {
+    hints: false
+  },
+  mode: 'development',
+  devServer: {
+    port: 3000,
+  },
   module: {
     rules: [
       {
